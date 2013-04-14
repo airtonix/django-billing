@@ -1,19 +1,10 @@
-from setuptools import setup
-
+from setuptools import setup, find_packages
+import billing as app
 setup(
     name='django-billing',
-    version='0.1.5',
+    version=app.__version__,
     author='Gabriel Grant',
-    packages=[
-        'billing',
-        'billing.processor',
-        'billing.processor.simple_account',
-        'billing.templatetags',
-        'billing.tests',
-        'billing_management',
-        'billing_management.management',
-        'billing_management.management.commands',
-    ],
+    packages=find_packages(),
     namespace_packages=['billing', 'billing.processor'],
     license='AGPL',
     long_description=open('README').read(),
@@ -24,7 +15,4 @@ setup(
         'django-jsonfield',
         'ordereddict',
     ],
-    dependency_links = [
-    	'http://github.com/airtonix/python-pricing/tarball/master#egg=python-pricing',
-    ]
 )
