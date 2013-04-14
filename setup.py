@@ -18,7 +18,6 @@ setup(
     license='AGPL',
     long_description=open('README').read(),
     install_requires=[
-        'git+git://github.com/airtonix/python-pricing.git',
         'django-annoying',
         'django-model-utils',
         'South',
