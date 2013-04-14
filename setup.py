@@ -18,7 +18,7 @@ setup(
     license='AGPL',
     long_description=open('README').read(),
     install_requires=[
-        'python-pricing',
+        'git+git://github.com/airtonix/python-pricing.git',
         'django-annoying',
         'django-model-utils',
         'South',
@@ -26,6 +26,6 @@ setup(
         'ordereddict',
     ],
     dependency_links = [
-    	'http://github.com/gabrielgrant/python-pricing/tarball/master#egg=python-pricing',
+    	'http://github.com/airtonix/python-pricing/tarball/master#egg=python-pricing',
     ]
 )
