@@ -5,7 +5,7 @@ setup(
     version=app.__version__,
     author='Gabriel Grant',
     packages=find_packages(),
-    namespace_packages=['billing', 'billing.processor'],
+    #namespace_packages=['billing', 'billing.processor'],
     license='AGPL',
     long_description=open('README').read(),
     install_requires=[
